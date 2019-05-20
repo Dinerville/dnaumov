@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => (
       background: `#203040`,
       marginBottom: `1.45rem`,
       width:"23%",
-      height:window.outerHeight,
+      height:"100%",
       float: "left",
       position: "fixed",
 
