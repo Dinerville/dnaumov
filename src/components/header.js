@@ -5,9 +5,17 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `#203040`,
       marginBottom: `1.45rem`,
-    }}
+      width:"23%",
+      height:window.outerHeight,
+      float: "left",
+      position: "fixed",
+
+    }
+    }
+
+
   >
     <div
       style={{
@@ -16,17 +24,30 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h2 style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `#ababab`,
             textDecoration: `none`,
+          }}
+
+          hoverstyle={{
+            color: `#ffffff`
           }}
         >
           {siteTitle}
         </Link>
-      </h1>
+      </h2>
+      <p
+        style={{
+          color: `#ababab`,
+          textDecoration: `none`,
+        }}
+      >
+        © {new Date().getFullYear()}, Built with
+        {` `}
+      </p>
     </div>
   </header>
 )
